@@ -38,7 +38,7 @@ notes = [
 
 var i = 0;
 
-while(i < notes.length){
+while(change > 0){
     notes[i].remainder = Math.floor(change/notes[i].value);
     change = (change%notes[i].value).toFixed(2);
     notes[i].remainder > 0 ? console.log(notes[i].name + notes[i].remainder): false;
